@@ -1,160 +1,336 @@
 <!DOCTYPE HTML>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Yingyi Zhang, Lund University in Sweden (Homepage)</title>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+
+  <title>Yingyi Zhang, Lund University in Sweden (Homepage)</title>
+  
   <meta name="author" content="Yingyi Zhang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/jpeg" href="images/icon.jpeg">
+  <link rel="icon" type="image/png" href="images/icon.png">
 
   <style>
-    .hidden-row { display: none; }
-  </style>
+    .hidden-row {
+        display: none; 
+    }
+
+</style>
+
+
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="font: 30px/1 Tahoma,Helvetica,Arial,\5b8b\4f53,sans-serif;text-align:center">Baichuan Huang 黄百川</p>
 
-          <!-- Top intro -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p class="name" style="text-align:center;">Yingyi Zhang</p>
+              <p>
+                I am a Ph.D. student in the <a href="https://www.eit.lth.se/">Department of Electrical and Information Technology</a>, <a href="https://www.lth.se/english/">LTH</a>, at Lund University, Sweden, working with <a href="https://www.eit.lth.se/staff/amir.aminifar">Asst. Prof. Amir Aminifar</a>. My research interests are efficient training and inference, bio-inspired deep learning, Internet of Things (IoT), and edge AI.
+              </p>
+              <p>
+                Welcome to our <a href="https://amir6584.github.io/intelligent_systems_laboratory/">Intelligent Systems Laboratory</a>!
+              </p>
 
-                  <p>
-                    I am a Ph.D. student in the
-                    <a href="https://www.eit.lth.se/">Department of Electrical and Information Technology</a>,
-                    <a href="https://www.lth.se/english/">LTH</a>,
-                    at Lund University, Sweden, working with
-                    <a href="https://www.eit.lth.se/staff/amir.aminifar">Asst. Prof. Amir Aminifar</a>.
-                    My research interests are efficient training and inference, bio-inspired deep learning,
-                    Internet of Things (IoT), and edge AI.
-                  </p>
+              <p style="text-align:center">
+                <a href="mailto:yingyi.zhang@eit.lth.se">Email</a> &nbsp/&nbsp
+                <a href="https://github.com/yingyi12">Github</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/yingyi-zhang-610a36222/"> LinkedIn </a> 
+                
+              </p>
+            </td>
+            <td style="padding:2.5%;width:80%;max-width:80%">
+              <a href="images/profile.jpeg"><img style="width:60%;max-width:60%" alt="profile photo" src="images/profile.jpeg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Publications</heading>   
+                ( <a href="javascript:void(0);" class="toggle-btn" onclick="showSelectedPapers()">show selected</a> /
+                <a href="javascript:void(0);" class="toggle-btn" onclick="showAllPapers()">show all</a> )
+            </td>
+          </tr>
+        </tbody></table>
+        <table id="papers-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-                  <p>
-                    Welcome to our
-                    <a href="https://amir6584.github.io/intelligent_systems_laboratory/">Intelligent Systems Laboratory</a>!
-                  </p>
+          
+          <tr class="selected-paper">
+            <td style="padding:10pt;width:25%;vertical-align:middle">
+              <img src="images/placeholder.png" width="160" style="opacity:0.8;">
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+              <papertitle>Preprints in preparation</papertitle>
+              <br>
+              <p style="margin:6px 0 0 0;">
+                I’m currently working on manuscripts. Updates will appear here.
+              </p>
+            </td>
+          </tr>
 
-                  <p style="text-align:center">
-                    <a href="mailto:yingyi.zhang@eit.lth.se">Email</a> &nbsp;/&nbsp;
-                    <a href="https://github.com/yingyi12">Github</a> &nbsp;/&nbsp;
-                    <a href="https://www.linkedin.com/in/yingyi-zhang-610a36222/">LinkedIn</a>
-                  </p>
+          
+          
+
+
+        
+      
+        
+
+
+
+        
+          
+          
+          
+
+
+        </tbody></table>
+
+        <script>
+            const papersTable = document.getElementById("papers-table");
+            function showAllPapers() {
+                papersTable.querySelectorAll("tbody tr").forEach(row => {
+                    row.style.display = "table-row"; 
+                });
+            }
+            function showSelectedPapers() {
+                papersTable.querySelectorAll("tbody tr").forEach(row => {
+                    if (row.classList.contains("selected-paper")) {
+                        row.style.display = "table-row"; 
+                    } else {
+                        row.style.display = "none";
+                    }
+                });
+            }
+            document.addEventListener("DOMContentLoaded", showSelectedPapers);
+            
+            async function fetchICIPStarCount() {
+            const owner = "whubaichuan"; // Replace with your GitHub username
+            const repo = "M3VSNet"; // Replace with your repository name
+            const url = `https://api.github.com/repos/${owner}/${repo}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch data");
+
+                const data = await response.json();
+                document.getElementById("star-count-icip").textContent = data.stargazers_count;
+            } catch (error) {
+                console.error("Error fetching star count:", error);
+            }
+        }
+
+        async function fetchFFStarCount() {
+            const owner = "loeweX"; // Replace with your GitHub username
+            const repo = "Forward-Forward"; // Replace with your repository name
+            const url = `https://api.github.com/repos/${owner}/${repo}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch data");
+
+                const data = await response.json();
+                document.getElementById("star-count-ff").textContent = data.stargazers_count;
+            } catch (error) {
+                console.error("Error fetching star count:", error);
+            }
+        }
+
+
+        async function fetchECAIStarCount() {
+            const owner = "AminAminifar"; // Replace with your GitHub username
+            const repo = "LightFF"; // Replace with your repository name
+            const url = `https://api.github.com/repos/${owner}/${repo}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch data");
+
+                const data = await response.json();
+                document.getElementById("star-count-ecai").textContent = data.stargazers_count;
+            } catch (error) {
+                console.error("Error fetching star count:", error);
+            }
+        }
+
+        async function fetchtinyfoaStarCount() {
+            const owner = "whubaichuan"; // Replace with your GitHub username
+            const repo = "TinyFoA"; // Replace with your repository name
+            const url = `https://api.github.com/repos/${owner}/${repo}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch data");
+
+                const data = await response.json();
+                document.getElementById("star-count-tinyfoa").textContent = data.stargazers_count;
+            } catch (error) {
+                console.error("Error fetching star count:", error);
+            }
+        }
+
+        async function fetchsurveyslamCount() {
+            const owner = "whubaichuan"; // Replace with your GitHub username
+            const repo = "A_Survey_of_SLAM"; // Replace with your repository name
+            const url = `https://api.github.com/repos/${owner}/${repo}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch data");
+
+                const data = await response.json();
+                document.getElementById("star-count-surveyslam").textContent = data.stargazers_count;
+            } catch (error) {
+                console.error("Error fetching star count:", error);
+            }
+        }
+
+        async function fetchbinaryfoCount() {
+            const owner = "whubaichuan"; // Replace with your GitHub username
+            const repo = "A_Survey_of_SLAM"; // Replace with your repository name
+            const url = `https://api.github.com/repos/${owner}/${repo}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch data");
+
+                const data = await response.json();
+                document.getElementById("star-count-surveyslam").textContent = data.stargazers_count;
+            } catch (error) {
+                console.error("Error fetching star count:", error);
+            }
+        }
+
+        // Fetch star count on page load
+        fetchICIPStarCount();
+        fetchFFStarCount();
+        fetchECAIStarCount();
+        fetchtinyfoaStarCount();
+        fetchsurveyslamCount();
+        </script>
+        
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <heading>Education/Experiences</heading>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+
+            <tr>
+              
+              
+              <td style="padding:2.5%;width:20%;vertical-align:top">
+                <p align="center">
+                <a href="images/lund.png"><img style="width:60%;max-width:60%" align="center" alt="lundloge" src="images/lund.png" class="hoverZoomLink"></a>
+                </p>
+                <p align="center">
+                <br>
+                <a href="https://www.lunduniversity.lu.se/">Lund University</a>
+                <br>
+                (QS World Ranking 72 in 2026)
+                <br>
+                <br>
+                Ph.D. student
+                <br>
+                Feb. 2025 ~ Now
+                <br>
+                <br>
+                <a href="https://wasp-sweden.org/">WASP</a> Ph.D. Student 
+                <br>
+                Feb. 2025 ~ Now
+                <br>
+                </p>
                 </td>
+              
+              
+              <td style="padding:2.5%;width:20%;vertical-align:top">
+              <p align="center">
+              <a href="images/tum.png"><img style="width:60%;max-width:60%" align="center" alt="whuloge" src="images/tum.png" class="hoverZoomLink"></a>
+              </p>
+              <p align="center">
+              <br>
+              <a href="https://www.tum.de/en/">Technical University of Munich</a>
+              <br>
+              (QS World Ranking 22 in 2026)
+              <br>
+              <br>
+              M.Sc.
+              <br>
+              Apr. 2021 ~ June. 2023
+              <br>
+              </p>
+              </td>
+            </tr>
+          </tbody></table> 
 
-                <td style="padding:2.5%;width:37%;max-width:37%">
-                  <a href="images/JonBarron.jpg">
-                    <img style="width:100%;max-width:100%;" alt="profile photo" src="images/JonBarron.jpg" class="hoverZoomLink">
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>Professional Service</heading>
+            <p>
 
-          <!-- Research -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:16px;width:100%;vertical-align:middle">
-                  <h2>Research</h2>
-                  <p>
-                    I'm interested in reliable decision-making in machine learning, focusing on robustness, fairness and privacy in neural networks.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
 
-          <!-- Education/Experiences -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tbody>
-              <tr>
-                <td><heading>Education/Experiences</heading></td>
-              </tr>
-            </tbody>
-          </table>
+              <strong>Presentation: </strong>: <br>
+              <strong>2026.01.04</strong>: Poster Presentation at <a href="https://www.nldl.org/">NLDL Winter School</a> in Tromso, Norway <br>
+<br>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto">
-            <tbody>
-              <tr>
-                <td style="padding:2.5%;width:50%;vertical-align:top">
+            <strong>Teaching Duty: </strong>: <br>
+            <strong>2025</strong>: Signal Processing in Multimedia (<a href="https://kurser.lth.se/kursplaner/23_24-en/EITA50.html">EITA50</a>) <br>  <!-- : <a href="https://www.eit.lth.se/course/eita50">Course Homepage</a>  <br> -->
+            
+            
+            <strong>Reviewer: </strong>: <br>
+           
+           
+            <strong>Grants: </strong>: <br>
+            <strong>2025.03</strong>: Scholarship from <a href="https://www.eugloh.eu/">EUGLOH</a> <br>
+
+
+            </p>
+          </td>
+        </tr>
+      </tbody></table>
+
+
+
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px;width=10%">
+                <br>
                   <p align="center">
-                    <a href="images/lund.png"><img style="width:60%;max-width:60%" align="center" alt="lundlogo" src="images/lund.png" class="hoverZoomLink"></a>
-                  </p>
-                  <p align="center">
-                    <br>
-                    <a href="https://www.lunduniversity.lu.se/">Lund University</a><br>
-                    (QS World Ranking 72 in 2026)<br><br>
-                    Ph.D. student<br>
-                    Feb. 2025 ~ Now<br><br>
-                    <a href="https://wasp-sweden.org/">WASP</a> Ph.D. Student<br>
-                    Feb. 2025 ~ Now
-                  </p>
-                </td>
+                      <a href="https://clustrmaps.com/site/1b1dn" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=rRKtZAtiUb9bmp_jnWDAjAViRzPo_H6qMW84vWt4wiE&cl=ffffff"></a>			  </p>
+                  <p></p>
+              </td>
+            </tr>
+          </tbody></table>
 
-                <td style="padding:2.5%;width:50%;vertical-align:top">
-                  <p align="center">
-                    <a href="images/tum.png"><img style="width:60%;max-width:60%" align="center" alt="tumlogo" src="images/tum.png" class="hoverZoomLink"></a>
-                  </p>
-                  <p align="center">
-                    <br>
-                    <a href="https://www.tum.de/en/">Technical University of Munich</a><br>
-                    (QS World Ranking 22 in 2026)<br><br>
-                    M.Sc.<br>
-                    Apr. 2021 ~ June. 2023
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Last update: Jan 2026. / <a href="https://github.com/jonbarron/jonbarron_website">Thanks for the template</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
 
-          <!-- Professional Service -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Professional Service</heading>
-                  <p>
-                    <strong>Presentation:</strong><br>
-                    <strong>2026.01.05</strong>: Poster Presentation at <a href="https://www.nldl.org/home">NLDL Winter School</a> in Tromso, Norway<br><br>
-
-                    <strong>Teaching Duty:</strong><br>
-                    <strong>2025</strong>: Signal Processing in Multimedia (<a href="https://kurser.lth.se/kursplaner/23_24-en/EITA50.html">EITA50</a>)<br><br>
-
-                    <strong>Grants:</strong><br>
-                    <strong>2025.05</strong>: Research Stint Abroad from <a href="https://wasp-sweden.org/">WASP</a><br>
-                    <strong>2025.03</strong>: Scholarship from <a href="https://www.eugloh.eu/">EUGLOH</a><br>
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <!-- Footer -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px">
-                  <br>
-                  <p style="text-align:right;font-size:small;">
-                    Last update: Nov 2025. / <a href="https://github.com/jonbarron/jonbarron_website">Thanks for the template</a>.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-        </td>
-      </tr>
-    </tbody>
+      </td>
+    </tr>
   </table>
+  
 </body>
+
+
 </html>
